@@ -1,0 +1,49 @@
+body{
+  background: url('../images/bg.jpg') no-repeat center center fixed; /*originally found this image at http://i.imgur.com/3OLTFVq.jpg*/
+  background-size: cover;
+  font-family: 'PT Serif Caption';
+  min-height: 95vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 5px;
+}
+
+figure {
+  width: 85%;
+}
+
+.button{
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  background-color:white;
+  opacity:0.5;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.button:hover {
+  opacity:0.65;
+}
+
+.button:active {
+opacity:0.4;
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
+
+.search-result-quote-bg {
+  background-color: rgba(207, 195, 57, 0.423);
+}
+/*
+for very small screens
+@media only screen and (max-width: 400px) {
+  figure {
+    font-size: 0.875rem;
+  }
+}
+*/
